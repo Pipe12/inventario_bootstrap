@@ -34,7 +34,7 @@
 		</div>
 
 		<div class="col-9">
-			<input class="btn btn-primary m-5" type="submit" value="Nuevo equipo">
+			<input class="btn btn-primary my-5" type="submit" value="Nuevo equipo">
 			<table class="table table-hover">
 			  <thead>
 			    <tr>
@@ -44,11 +44,13 @@
 			    </tr>
 			  </thead>
 			  <tbody>
-			    <tr>
-			      <th scope="row">1</th>
-			      <td>Virrey Solis</td>
-			      <td>1234567891</td>
-			    </tr>
+			  	<% @headquarters.each do |head| %>
+			  		<tr>
+			  		  <th scope="row"><%= head.id %></th>
+			  		  <td><%= head.name %></td>
+			  		  <td><%= head.code %></td>
+			  		</tr>
+			  	<% end %>
 			  </tbody>
 			</table>
 		</div>
