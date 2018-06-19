@@ -1,11 +1,56 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="#">Inventario</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav ml-auto">
+		    <li class="nav-item">
+		      <a class="nav-link" href="#">Salir</a>
+		    </li>
+		  </ul>
+		</div>
+	</div>
+</nav>
+
 <div class="container">
-	<div class="jumbotron">
-	  <h1 class="display-4">Hello, world!</h1>
-	  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-	  <hr class="my-4">
-	  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-	  <p class="lead">
-	    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-	  </p>
+	<div class="row">
+
+		<div class="col-3 mr-auto my-5">
+			<div class="form-group">
+				<input class="form-control" name="concept" value="Concepto">
+			</div>
+			<div>
+				<select class="form-control" id="exampleFormControlSelect1">
+					<option selected>Proveedor</option>
+				  <option>Salud Total</option>
+				  <option>Virrey Solis</option>
+				</select>
+			</div>
+			<input class="btn btn-primary mt-3" type="submit" value="Buscar">
+		</div>
+
+		<div class="col-9">
+			<input class="btn btn-primary m-5" type="submit" value="Nuevo equipo">
+			<table class="table table-hover">
+			  <thead>
+			    <tr>
+			      <th scope="col">#</th>
+			      <th scope="col">Nombre</th>
+			      <th scope="col">Codigo</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td>Virrey Solis</td>
+			      <td>1234567891</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
 	</div>
 </div>
