@@ -1,1 +1,17 @@
-<h1 class="jumbotron">Te amo Sara</h1>
+<div class="container">
+  <div class="row">
+    <div class="btn btn-success btn-block">
+      <p><%= @headquarter.name %></p>
+      <p><%= @headquarter.code %></p>
+    </div>
+  </div>
+  <% @branchOffices.each do |branch| %>
+    <a id="ti" href="#">
+      <div id="tr" class="row">
+        <div id="td" class="col-2"><%= branch.id %></div>
+        <div id="td" class="col-5"><%= branch.name %></div>
+        <div id="td" class="col-5"><%= branch.code %></div>
+      </div>
+    </a>
+  <% end %>
+</div>

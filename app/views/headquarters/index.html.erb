@@ -27,7 +27,7 @@
 				<% @headquarters.each do |head| %>
 					<a id="ti" href="/headquarters/show">
 						<div id="tr" class="row">
-							<div id="td" class="col-2"><%= head.id %></div>
+							<div id="td" class="col-2"><%= link_to "Show", headquarter_path(head) %></div>
 							<div id="td" class="col-5"><%= head.name %></div>
 							<div id="td" class="col-5"><%= head.code %></div>
 						</div>
