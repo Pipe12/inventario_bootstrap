@@ -1,17 +1,25 @@
 <div class="container">
-  <div class="row">
-    <div class="btn btn-success btn-block">
-      <p><%= @headquarter.name %></p>
-      <p><%= @headquarter.code %></p>
+  <div class="first-margin default-top-padding box">
+    <h2>Prestador</h2>
+    <div class="row">
+      <div class="col-6">
+        <small>Nombre</small>
+        <h3><%= @headquarter.name %></h3>
+      </div>
+      <div class="col-6">
+        <small>Codigo</small>
+        <h3><%= @headquarter.code %></h3>
+      </div>
     </div>
   </div>
-  <% @branchOffices.each do |branch| %>
-    <a id="ti" href="#">
-      <div id="tr" class="row">
-        <div id="td" class="col-2"><%= branch.id %></div>
-        <div id="td" class="col-5"><%= branch.name %></div>
-        <div id="td" class="col-5"><%= branch.code %></div>
-      </div>
-    </a>
-  <% end %>
+  <div class="default-top-padding box">
+    <h2>Selecione la sede</h2>
+    <% @branchOffices.each do |branch| %>
+        <div id="tr" class="row">
+          <div id="td" class="col-2"><%= branch.id %></div>
+          <div id="td" class="col-5"><%= branch.name %></div>
+          <div id="td" class="col-5"><%= branch.code %></div>
+        </div>
+    <% end %>
+  </div>
 </div>
