@@ -1,1 +1,28 @@
-<h1><%= @branch.name %></h1>
+<div class="container">
+  <div class="first-margin default-top-padding box">
+    <h2>Prestador</h2>
+    <div class="row">
+      <div class="col-6">
+        <small>Nombre</small>
+        <h3><%= @headquarter.name %></h3>
+      </div>
+      <div class="col-6">
+        <small>Codigo</small>
+        <h3><%= @headquarter.code %></h3>
+      </div>
+    </div>
+  </div>
+  <div class="default-top-padding box">
+    <h2>Sede</h2>
+    <div class="row">
+      <div class="col-6">
+        <small>Nombre</small>
+        <h3><%= @branchoffice.name %></h3>
+      </div>
+      <div class="col-6">
+        <small>Codigo</small>
+        <h3><%= @branchoffice.code %></h3>
+      </div>
+    </div>
+  </div>
+</div>

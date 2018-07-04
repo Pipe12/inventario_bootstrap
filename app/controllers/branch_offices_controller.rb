@@ -3,7 +3,8 @@ class BranchOfficesController < ApplicationController
     @prueba = "Te amo Sara"
   end
   def show
-    @branch = BranchOffice.find(params[:id])
+    @branchoffice = BranchOffice.find(params[:id])
+    @headquarter = Headquarter.find(@branchoffice.headquarter_id)
   end
 
   private
