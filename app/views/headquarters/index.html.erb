@@ -18,21 +18,24 @@
 
 		<div class="col-9">
 			<input class="btn btn-primary my-5" type="submit" value="Nuevo equipo">
-			<div id="tabla">
-				<div class="row">
-					<div id="th" class="col-2">#</div>
-					<div id="th" class="col-5">Nombre</div>
-					<div id="th" class="col-5">Codigo</div>
+			<div class="default-top-padding box">
+				<h2>Seleccione el prestador</h2>
+				<div id="tabla">
+					<div class="row">
+						<div id="th" class="col-2">#</div>
+						<div id="th" class="col-5">Nombre</div>
+						<div id="th" class="col-5">Codigo</div>
+					</div>
+					<% @headquarters.each do |head| %>
+						<a id="ti" href="/headquarters/show">
+							<div id="tr" class="row">
+								<div id="td" class="col-2"><%= link_to "Show", headquarter_path(head) %></div>
+								<div id="td" class="col-5"><%= head.name %></div>
+								<div id="td" class="col-5"><%= head.code %></div>
+							</div>
+						</a>
+					<% end %>
 				</div>
-				<% @headquarters.each do |head| %>
-					<a id="ti" href="/headquarters/show">
-						<div id="tr" class="row">
-							<div id="td" class="col-2"><%= link_to "Show", headquarter_path(head) %></div>
-							<div id="td" class="col-5"><%= head.name %></div>
-							<div id="td" class="col-5"><%= head.code %></div>
-						</div>
-					</a>
-				<% end %>
 			</div>
 		</div>
 	</div>
