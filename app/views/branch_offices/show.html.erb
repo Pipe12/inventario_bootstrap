@@ -13,13 +13,16 @@
     </div>
   </div>
   <div class="default-top-padding box">
-    <h2>Selecione la sede</h2>
-    <% @branchOffices.each do |branch| %>
-        <div id="tr" class="row">
-          <div id="td" class="col-2"><%= link_to "Show", branch_office_path(branch) %></div>
-          <div id="td" class="col-5"><%= branch.name %></div>
-          <div id="td" class="col-5"><%= branch.code %></div>
-        </div>
-    <% end %>
+    <h2>Sede</h2>
+    <div class="row">
+      <div class="col-6">
+        <small>Nombre</small>
+        <h3><%= @branchoffice.name %></h3>
+      </div>
+      <div class="col-6">
+        <small>Codigo</small>
+        <h3><%= @branchoffice.code %></h3>
+      </div>
+    </div>
   </div>
 </div>
