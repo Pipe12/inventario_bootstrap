@@ -26,19 +26,23 @@
     </div>
   </div>
   <div class="default-top-padding box">
-    <h2>Selecione la ubicacion</h2>
+    <input class="btn btn-primary my-3" type="submit" value="Nuevo equipo">
+    <h2>Inventario de equipos</h2>
     <div id="tabla">
       <div class="row">
-        <div id="th" class="col-2">Accion</div>
-        <div id="th" class="col-5">Nombre</div>
-        <div id="th" class="col-5">Codigo</div>
+        <div id="th" class="col">Equipo</div>
+        <div id="th" class="col">Marca</div>
+        <div id="th" class="col">Modelo</div>
+        <div id="th" class="col">Serial</div>
+        <div id="th" class="col">VS placa</div>
       </div>
+      <!--
       <% @locations.each do |location| %>
           <div id="tr" class="row">
             <div id="td" class="col-2"><%= link_to "Show", '#' %></div>
             <div id="td" class="col-10"><%= location.name %></div>
           </div>
-      <% end %>
+      <% end %>-->
     </div>
   </div>
 </div>
