@@ -22,7 +22,7 @@
       </div>
       <% @branchOffices.each do |branch| %>
           <div id="tr" class="row">
-            <div id="td" class="col-2"><%= link_to "Show", branch_office_path(branch) %></div>
+            <div id="td" class="col-2"><%= link_to "Show", headquarter_branch_office_path(branch.headquarter_id, branch.id) %></div>
             <div id="td" class="col-5"><%= branch.name %></div>
             <div id="td" class="col-5"><%= branch.code %></div>
           </div>
